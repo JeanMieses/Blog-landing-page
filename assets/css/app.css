@@ -1,0 +1,289 @@
+body {
+  color:  hsl(207, 13%, 34%);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Overpass', sans-serif;
+}
+
+header {
+  height: 430px;
+}
+
+.header-text #btn-1 {
+  color: hsl(353, 100%, 62%);
+  background-color: white;
+}
+
+.navbar {
+  position: relative;
+  z-index: 8;
+  max-width: 100%;
+  max-height: 100%;
+  height: 430px;
+  background: url("../../images/bg-pattern-intro.svg"), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-size: contain;
+  background-position: right;
+  border-radius: 0 0 0 80px;
+  overflow: scroll;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: -18em auto 0 auto;
+}
+
+.header-text {
+  text-align: center;
+  z-index: 9;
+  position: absolute;
+  top: 17%;
+  right: 10%;
+  height: 190px;
+  width: 80%;
+  color: hsl(0, 0%, 100%);
+  border: solid 2px white;
+  border: none;
+}
+
+.header-text h1 {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.header-text p {
+  font-size: 15px;
+}
+
+.header-text button {
+  margin: 1em;
+  border-radius: 18px;
+  border: solid 2px white;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  height: 25px;
+  width: 90px;
+  background-color: inherit;
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  margin: 2.7em auto;
+}
+
+#main-image {
+  height: 570px;
+  width: 500.5px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.text {
+  font-size: 18px;
+  margin: auto;
+  width: 30%;
+}
+
+.text h3 {
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.4;
+  margin: 1em auto;
+  width: 80%;
+  text-align: center;
+}
+
+.text p {
+  line-height: 2;
+  text-align: center;
+}
+
+#secondary-section {
+  height: 650px;
+  z-index: 8;
+  background: url("../../images/bg-pattern-circles.svg"), hsl(237, 23%, 32%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: 14em 0;
+  margin-bottom: 7em;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  border-radius: 0 90px 0 90px;
+}
+
+#secondary-section img {
+  position: relative;
+  right: -14%;
+  top: 14%;
+  width: 419px;
+  height: 450px;
+}
+
+#secondary-section .text {
+  font-size: 21px;
+  color: white;
+  padding-bottom: 30px;
+}
+
+#last-section img {
+  max-width: 100%;
+}
+
+#last-section {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+
+#last-section img {
+  margin: auto;
+  max-width: 100%;
+  width: 580px;
+  height: 520px;
+}
+
+#last-section .text {
+  margin: auto;
+}
+
+footer {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(240, 10%, 16%);
+  height: 450px;
+  color: hsl(240, 2%, 79%);
+  border-radius: 0 75px 0 0;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+}
+
+footer img {
+  margin-top: 5em;
+  margin-bottom: 1em;
+}
+
+ul {
+  display: block;
+  margin: 4.7em;
+}
+
+ul li {
+  line-height: 1.7;
+  list-style-type: none;
+}
+
+@media (max-width: 828px) {
+  .container {
+    margin: -20em 1em 0 1em;
+  }
+
+  .header-text h1 {
+    margin: 0.7em auto;
+  }
+
+  .header-text p {
+    font-size: 13px;
+  }
+
+  .header-text {
+    position: absolute;
+    top: 19%;
+    right: 10%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 2.7em auto;
+  }
+
+  #main-image {
+    margin: 0;
+    height: 258px;
+    width: 223.5px;
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .text {
+    margin: 0;
+    width: 80%;
+  }
+
+  #secondary-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #secondary-section img {
+    z-index: 9;
+    position: absolute;
+    top: -30%;;
+    right: 15%;
+    max-width: 100%;
+    height: 358px;
+    width: 323.5px;
+  }
+
+  #secondary-section .text {
+    margin: 0;
+    font-size: 16px;
+    padding-top: 170px;
+    padding-bottom: 30px;
+  }
+
+  #last-section img {
+    max-width: 100%;
+    height: 342px;
+    width: 410px;
+  }
+
+  #last-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    height: 800px;
+  }
+
+  footer img {
+    margin-bottom: 1em;
+  }
+
+  footer div {
+    display: block;
+    text-align: center;
+    margin: 2em 0;
+  }
+
+  ul {
+    margin: 0;
+    margin-top: 2em;
+  }
+
+}
